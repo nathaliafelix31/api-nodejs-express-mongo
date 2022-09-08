@@ -7,6 +7,5 @@ app.use(bodyParser.json()); //para entender quando enviar uma aquisição em jso
 app.use(bodyParser.urlencoded({extended: false})) //para entender paramentos passados na url para decodá-los
 
 
-require('./controllers/authController')(app);
-require('./controllers/projectController')(app);
+require('./app/controllers/index')(app);
 app.listen(3000); 
